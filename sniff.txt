@@ -1,0 +1,10 @@
+import "express" from express;
+
+const app = express();
+const port = <tvoj_port>; 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
+
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+});
